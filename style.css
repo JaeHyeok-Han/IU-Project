@@ -1,0 +1,342 @@
+:root {
+  /* color */
+  --배경: #e1f0f9;
+  --트위터: #2aa9e0;
+  --페이스북: #4867aa;
+  --인스타: #fd6e43;
+  --유튜브: red;
+  --black-color: black;
+  --white-color: white;
+
+  /* size */
+
+}
+* {
+  box-sizing: border-box;
+}
+.stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background:  var(--배경);
+  overflow: hidden;
+}
+.logobox {
+  position: absolute;
+  display: flex;
+  left: 18px;
+  top: 18px;
+  width: 150px;
+  height: 60px;
+}
+.logobox .logo {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  width: 60px;
+  height: 60px;
+  background: url("img/로고.png") no-repeat;
+  background-size: 200%;
+  background-position: center;
+}
+.logobox .title {
+  font: italic 3rem 'Oswald', sans-serif;
+  text-decoration: none;
+  color: var(--black-color);
+  margin-left: 65px;
+}
+.office {
+  position: absolute;
+  right: 70px;
+  bottom: 0px;
+  width: 90px;
+  height: 60px;
+  background: url("img/회사로고.png") no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+.side {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 70px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+.side .menuicon {
+  position: absolute;
+  top: 12px;
+  left: 25%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .5s;
+}
+.side .snslist {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1.2rem;
+}
+.side .snslist .sns i {
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--black-color);
+}
+.side .snslist .sns .fa-twitter:hover {
+  color: var(--트위터);
+}
+.side .snslist .sns .fa-facebook-f:hover {
+  color: var(--페이스북);
+}
+.side .snslist .sns .fa-instagram:hover {
+  color: var(--인스타);
+}
+.side .snslist .sns .fa-youtube:hover {
+  color: var(--유튜브);
+}
+.menu {
+  position: absolute;
+  right: 70px;
+  top: 0;
+  width: 0px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 1s;
+}
+.menu .menulist {
+  position: absolute;
+  left: 30px;
+  top: -500px;
+  transition: 1s;
+}
+.menu .menulist .menuitem {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.menu .menulist .menuitem a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+.mainimg {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60vw;
+  height: 48vh;
+  background:  var(--배경) url("img/IU배경.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.profilehead {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+.profilehead h1 {
+  font: italic 3rem 'Oswald', sans-serif;
+}
+.profileimg {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  width: 30vw;
+  height: 30vw;
+  background: url("img/프로필.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.profile {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 35vw;
+  height: 27vh;
+}
+.profile .name {
+  font: 2.5rem 'Oswald', sans-serif;
+  margin-left: 20px;
+  border-bottom: 1px solid black;
+}
+.profile .true {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.profile .true .trueitem {
+  margin-right: 15px;
+}
+.profile .hobby {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.profile .hobby .hobbyitem {
+  margin-right: 15px;
+}
+.profile .birth {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.plus {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  width: 35vw;
+  height: 35vh;
+}
+.plus .intro {
+  font: 2.5rem 'Oswald', sans-serif;
+  margin-left: 20px;
+  border-bottom: 1px solid black;
+}
+.plus p {
+  margin: 15px 25px;
+}
+.discographyhead {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+.discographyhead h1 {
+  font: italic 3rem 'Oswald', sans-serif;
+}
+.imglist {
+  overflow: hidden;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translateX(-50%) translateY(-50%);
+  width: 820px;
+  height: 462px;
+}
+.imglist .imgbox {
+  transition: 1s;
+  display: flex;
+}
+.galleryicon {
+  position: absolute;
+  left: 50vw;
+  top: 85vh;
+  transform: translateX(-50%) translateY(-50%);
+}
+.galleryicon i {
+  font-size: 2rem;
+  color: #8dbffd;
+  margin: 5px 20px;
+  cursor: pointer;
+}
+.videohead {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+.videohead h1 {
+  font: italic 3rem 'Oswald', sans-serif;
+}
+.videomain {
+  overflow: hidden;
+  position: absolute;
+  left: 50vw;
+  top: 60vh;
+  transform: translateX(-50%) translateY(-50%);
+  width: 640px;
+  height: 360px;
+}
+.videomain .videobox {
+  transition: 1s;
+  display: flex;
+}
+.videoicon {
+  position: absolute;
+  left: 50vw;
+  top: 90vh;
+  transform: translateX(-50%) translateY(-50%);
+}
+.videoicon i {
+  font-size: 2rem;
+  color: #8dbffd;
+  margin: 5px 20px;
+  cursor: pointer;
+}
+.noticehead {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+.noticehead h1 {
+  font: italic 3rem 'Oswald', sans-serif;
+}
+.notice {
+  position: absolute;
+  left: 50vw;
+  top: 55vh;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60vw;
+  height: 50vh;
+}
+.notice .noticebar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  border-radius: 10px;
+  background: #d9cda4;
+  display: flex;
+  align-items: center;
+}
+.notice .noticebar .barlist {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.notice .noticebar .barlist .baritem:nth-child(1){
+  flex: 1 1 10%;
+}
+.notice .noticebar .barlist .baritem:nth-child(2){
+  flex: 1 1 65%;
+}
+.notice .noticebar .barlist .baritem:nth-child(3){
+  flex: 1 1 15%;
+}
+.notice .noticebar .barlist .baritem:nth-child(4){
+  flex: 1 1 10%;
+}
+.notice .noticelist {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 88%;
+  border-radius: 10px;
+  background: #f9f9ee;
+}
