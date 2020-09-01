@@ -21,6 +21,7 @@
   background:  var(--배경);
   overflow: hidden;
 }
+/* 로고 */
 .logobox {
   position: absolute;
   display: flex;
@@ -45,6 +46,7 @@
   color: var(--black-color);
   margin-left: 65px;
 }
+/* 회사로고 */
 .office {
   position: absolute;
   right: 70px;
@@ -55,6 +57,7 @@
   background-size: contain;
   margin-right: 20px;
 }
+/* 메뉴바 */
 .side {
   position: absolute;
   right: 0px;
@@ -99,6 +102,10 @@
 .side .snslist .sns .fa-youtube:hover {
   color: var(--유튜브);
 }
+.side .fa-angle-up {
+  display: none;
+}
+/* 메뉴 */
 .menu {
   position: absolute;
   right: 70px;
@@ -123,6 +130,7 @@
   text-decoration: none;
   color: var(--white-color);
 }
+/* 메인 */
 .mainimg {
   position: absolute;
   left: 50vw;
@@ -134,20 +142,7 @@
   background-size: contain;
   background-position: center;
 }
-.profilehead {
-  position: absolute;
-  display: flex;
-  left: 0;
-  top: 100px;
-  width: 100%;
-  height: 15vh;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.8);
-}
-.profilehead h1 {
-  font: italic 3rem 'Oswald', sans-serif;
-}
+/* 프로필 */
 .profileimg {
   position: absolute;
   left: 10%;
@@ -205,20 +200,7 @@
 .plus p {
   margin: 15px 25px;
 }
-.discographyhead {
-  position: absolute;
-  display: flex;
-  left: 0;
-  top: 100px;
-  width: 100%;
-  height: 15vh;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.8);
-}
-.discographyhead h1 {
-  font: italic 3rem 'Oswald', sans-serif;
-}
+/* 갤러리 */
 .imglist {
   overflow: hidden;
   position: absolute;
@@ -244,20 +226,7 @@
   margin: 5px 20px;
   cursor: pointer;
 }
-.videohead {
-  position: absolute;
-  display: flex;
-  left: 0;
-  top: 100px;
-  width: 100%;
-  height: 15vh;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.8);
-}
-.videohead h1 {
-  font: italic 3rem 'Oswald', sans-serif;
-}
+/* 비디오 */
 .videomain {
   overflow: hidden;
   position: absolute;
@@ -283,20 +252,7 @@
   margin: 5px 20px;
   cursor: pointer;
 }
-.noticehead {
-  position: absolute;
-  display: flex;
-  left: 0;
-  top: 100px;
-  width: 100%;
-  height: 15vh;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.8);
-}
-.noticehead h1 {
-  font: italic 3rem 'Oswald', sans-serif;
-}
+/* 공지 */
 .notice {
   position: absolute;
   left: 50vw;
@@ -339,4 +295,142 @@
   height: 88%;
   border-radius: 10px;
   background: #f9f9ee;
+}
+.head {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+.head h1 {
+  font: italic 3rem 'Oswald', sans-serif;
+}
+
+@media (max-width: 400px) {
+  .stage {
+    overflow: auto;
+  }
+  .logobox {
+    left: 5vw;
+    top: 5vw;
+  }
+  .office {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1vh;
+  }
+  .side {
+    background: none;
+  }
+  .side .menuicon {
+    top: 10vw;
+    left: 10%;
+    font-size: 1.5rem;
+  }
+  .side .snslist {
+    bottom:50px;
+    font-size: 0;
+    transition: 1s;
+  }
+  .side .fa-angle-up {
+    display: inline;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2rem;
+    color: #8dbffd;
+  }
+  .menu {
+    width: 230px;
+    height: auto;
+    background: none;
+  }
+  .menu .menulist {
+    text-align: right;
+    right: 10px;
+    top: -500px;
+    margin-top: 10px;
+  }
+  .menu .menulist .menuitem {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .menu .menulist .menuitem a {
+    color: #8dbffd;
+  }
+  .mainimg{
+    width: 100vw;
+    height: 60vw;
+  }
+  .profileimg {
+    left: 50vw;
+    top: 250px;
+    transform: translateX(-50%) scale(2);
+    width: 30vw;
+    height: 30vw;
+  }
+  .profile {
+    left: 50vw;
+    top: 450px;
+    transform: translateX(-50%);
+    width: 90vw;
+  }
+  .plus {
+    left: 50vw;
+    top: 650px;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 60vh;
+  }
+  .imglist {
+    width: 410px;
+    height: 231px;
+  }
+  .imglist .imgbox {
+    height: 231px;
+  }
+  .imglist .imgbox img {
+    width: 410px;
+    height: 231px;
+  }
+  .videomain {
+    width: 400px;
+    height: 225px;
+    top: 50%;
+  }
+  .videomain .videobox {
+    height: 225px;
+  }
+  .videomain .videobox iframe {
+    width: 400px;
+    height: 225px;
+  }
+  .videoicon {
+    top: 80vh;
+  }
+  .notice {
+    position: absolute;
+    left: 50vw;
+    top: 55vh;
+    transform: translateX(-50%) translateY(-50%);
+    width: 95vw;
+    height: 50vh;
+  }
+  .notice .noticebar {
+    font-size: 0.75rem;
+  }
+  .head {
+    height: 10vh;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .head h1 {
+    font: italic 2rem 'Oswald', sans-serif;
+  }
 }

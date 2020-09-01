@@ -6,23 +6,38 @@ const right = document.querySelector('.galleryicon .fa-chevron-right');
 function replace(num) {
   imgbox.style.transform = 'translateX('+num*-820+'px)';
 }
+function replace2(num) {
+  imgbox.style.transform = 'translateX('+num*-410+'px)';
+}
+
 right.addEventListener('click', function() {
   let num = img.getAttribute('data-num');
   if(num == 4)  {
 
   } else {
+    if(window.innerWidth>=400) {
+      num++;
+      replace(num);
+      img.setAttribute('data-num', num);
+    }
     num++;
-    replace(num);
+    replace2(num);
     img.setAttribute('data-num', num);
   }
 });
+
 left.addEventListener('click', function() {
   let num = img.getAttribute('data-num');
   if(num == 0)  {
 
   } else {
+    if(window.innerWidth>=400) {
+      num--;
+      replace(num);
+      img.setAttribute('data-num', num);
+    }
     num--;
-    replace(num);
+    replace2(num);
     img.setAttribute('data-num', num);
   }
 });
