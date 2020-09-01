@@ -311,7 +311,7 @@
   font: italic 3rem 'Oswald', sans-serif;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .stage {
     overflow: auto;
   }
