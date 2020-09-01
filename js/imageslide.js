@@ -15,7 +15,7 @@ right.addEventListener('click', function() {
   if(num == 4)  {
 
   } else {
-    if(window.innerWidth>=400) {
+    if(window.innerWidth>=600) {
       num++;
       replace(num);
       img.setAttribute('data-num', num);
@@ -31,7 +31,7 @@ left.addEventListener('click', function() {
   if(num == 0)  {
 
   } else {
-    if(window.innerWidth>=400) {
+    if(window.innerWidth>=600) {
       num--;
       replace(num);
       img.setAttribute('data-num', num);
